@@ -10,12 +10,27 @@ document.getElementById('userAgent').innerHTML = navigator.userAgent;
 document.getElementById('javaEnabled').innerHTML = navigator.javaEnabled();
 
 //returns true if user is using one of the following mobile browsers
-var isMobile=navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
-if(isMobile==true) {
+var isMobile=detectmob();
+if(isMobile) {
     document.getElementById('isMobile').innerHTML = "Mobile Device: True";
     
     //add additional device information here
     
 } else {
     document.getElementById('isMobile').innerHTML = "Mobile Device: Not Detected " + isMobile;
+}
+
+function detectmob() { 
+    if( navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ){
+        return true;
+    } else {
+        return false;
+    }
 }
