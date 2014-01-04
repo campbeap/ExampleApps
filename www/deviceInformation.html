@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="Andrew Campbell">
+<meta http-equiv="Reply-to" content="andrew.campbell@andymus.com">
+<meta name="generator" content="PhpED 8.0">
+<meta name="description" content="Example Page Displaying Current Device Information">
+<meta name="keywords" content="">
+<meta name="creation-date" content="04/01/2014">
+<meta name="revisit-after" content="15 days">
+<title>Example Device Information Page</title>
+<link rel="stylesheet" type="text/css" href="css/example.css">
+</head>
+<body>
+<a href="index.html">Home</a>
+<h1>Device Information</h1>
+<p>This page fetches information on your current Device and Browser</p>
+<h2>Navigator Object Details</h2>
+<table border="1" cellpadding="5" cellspacing="0">
+   <tr>
+      <th>Property</th>
+      <th>Description</th>
+      <th>Result</th>
+   </tr>
+
+   <tr>
+      <td>appCodeName</td>
+      <td>Returns the code name of the browser</td>
+      <td><div id="appCodeName">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>appName</td>
+      <td>Returns the name of the browser</td>
+      <td><div id="appName">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>appVersion</td>
+      <td>Returns the version information of the browser</td>
+      <td><div id="appVersion">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>cookieEnabled</td>
+      <td>Determines whether cookies are enabled in the browser</td>
+      <td><div id="cookieEnabled">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>language</td>
+      <td>Returns the language of the browser</td>
+      <td><div id="language">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>onLine</td>
+      <td>Determines whether the browser is online</td>
+      <td><div id="onLine">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>platform</td>
+      <td>Returns for which platform the browser is compiled</td>
+      <td><div id="platform">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>product</td>
+      <td>Returns the engine name of the browser</td>
+      <td><div id="product">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>userAgent</td>
+      <td>Returns the user-agent header sent by the browser to the server</td>
+      <td><div id="userAgent">&nbsp;</div></td>
+   </tr>
+
+   <tr>
+      <td>javaEnabled()</td>
+      <td>Specifies whether or not the browser has Java enabled</td>
+      <td><div id="javaEnabled">&nbsp;</div></td>
+   </tr>
+</table>
+<div id="isMobile">Mobile Device: Not Determined</div>
+
+<script type="text/javascript" charset="utf-8" src="js/deviceInformation.js"></script>
+</body>
+</html>
