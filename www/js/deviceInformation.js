@@ -17,5 +17,5 @@ if(isMobile==true) {
     //add additional device information here
     
 } else {
-    document.getElementById('isMobile').innerHTML = "Mobile Device: Not Detected";
+    document.getElementById('isMobile').innerHTML = "Mobile Device: Not Detected " + isMobile;
 }
