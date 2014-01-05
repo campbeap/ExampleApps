@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Expires" content="Fri, Jan 01 1900 00:00:00 GMT">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Lang" content="en">
+<meta name="author" content="Andrew Campbell">
+<meta http-equiv="Reply-to" content="andrew.campbell@andymus.com">
+<meta name="generator" content="PhpED 8.0">
+<meta name="description" content="Form Example">
+<meta name="keywords" content="">
+<meta name="creation-date" content="04/01/2014">
+<meta name="revisit-after" content="15 days">
+<title>Example Application</title>
+<link rel="stylesheet" type="text/css" href="css/example.css">
+</head>
+<body>
+<a href="index.html">Home</a>
+<h1>Form Example</h1>
+<p>A simple form that submits the entries to a script using XMLHttpRequest and returning the response to a div element.</p>
+<form>
+<table cellpadding=10 cellspacing=0>
+   <tr>
+      <td>Comment</td>
+      <td><input type="text" id="comment"></td>
+   </tr>
+
+   <tr>
+      <td>&nbsp;</td>
+      <td><button type="button" onclick="postFormData()">Submit</button></td>
+   </tr>
+</table>
+
+<hr>
+<h2>Response</h2>
+<div id="response">No Response As Yet</div>
+
+</form>
+
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="js/formJS.js"></script>
+
+</body>
+</html>
